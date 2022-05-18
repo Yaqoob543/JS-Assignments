@@ -148,4 +148,59 @@ function task4() {
         document.write("<h2>", 5, " x ", 10, " = ",
             5 * 10, "</h2>")
     }
+
+}
+
+//Task 6
+function task6() {
+
+
+    var sub1 = prompt("Enter the name of Subject 1");
+    var marks1 = +prompt("Enter the Masks Obtained in " + sub1);
+    var sub2 = prompt("Enter the name of Subject 2");
+    var marks2 = +prompt("Enter the Masks Obtained in " + sub2);
+    var sub3 = prompt("Enter the name of Subject 3");
+    var marks3 = +prompt("Enter the Masks Obtained in " + sub3);
+    var each_marks = 100;
+    var total_obtain = marks1 + marks2 + marks3;
+    var total_marks = 300;
+    var eachper1 = (marks1 / 100) * 100;
+    var eachper2 = (marks2 / 100) * 100
+    var eachper3 = (marks3 / 100) * 100;
+    var total_per = (total_obtain / total_marks) * 100;
+
+    document.write(`<table>
+        <tr>  
+            <th>Subjects</th>  
+            <th>Total Marks</th>  
+            <th>Obtained Marks</th> 
+            <th>Percentage</th>  
+        </tr>  
+        <tr>
+            <td>${sub1}</td>
+            <td>${100}</td>
+            <td>${marks1}</td>
+            <td>${eachper1}%</td>
+        </tr>
+        <tr>
+            <td>${sub2}</td>
+            <td>${100}</td>
+            <td>${marks2}</td>
+            <td>${eachper2}%</td>
+        </tr>
+        <tr>
+        <td>${sub3}</td>
+        <td>${100}</td>
+        <td>${marks3}</td>
+        <td>${eachper3}%</td>
+    </tr> 
+    <tr>
+        <td><b>${"Total"}</b></td>
+        <td> <b> ${300} </b> </td>
+        <td><b>${total_obtain}</b></td>
+        <td><b>${total_per}%</b></td>
+    </tr> 
+
+        </table>`)
+
 }

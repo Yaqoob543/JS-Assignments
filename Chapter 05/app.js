@@ -214,7 +214,7 @@ function task13 () {
     
     document.write("<p>", " Your Favorite Snack is : " + snack , "</p>");
     document.write("<p>" , "Your Current age is : " + current_age , "</p>");
-    document.write("<p>" , "Your Estimated Maxiumu age is : " + max_age , "</p>");
+    document.write("<p>" , "Your Estimated Maximum age is : " + max_age , "</p>");
     document.write("<p>" , "Amount of Snacks per day : " + perday , "</p>");
     document.write("<p>" , "You will need " + need + " " + snack + " to last you until the ripe old age of " + max_age , "</p>");
 
