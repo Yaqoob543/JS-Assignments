@@ -188,8 +188,8 @@ function task9() {
         alert(num + " is an even number");
     } else if (num % 2 != 0) {
         alert(num + " is an odd number");
-    } else if (num = String) {
-        alert("Please Type a Number ");
+    } else {
+        alert("Please Enter Any Number")
     }
 }
 
