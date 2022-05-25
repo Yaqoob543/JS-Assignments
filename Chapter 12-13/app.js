@@ -59,7 +59,7 @@ function task4() {
     } else if (character !== "a" || "e" || "i" || "o" || "u") {
         alert("False");
     } else {
-        alert("False")
+        alert("False");
     }
 
 }
