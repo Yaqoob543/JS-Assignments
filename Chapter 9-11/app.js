@@ -28,7 +28,7 @@ function task2() {
 function task3() {
     var signal = prompt("Please Enter the Signal Color");
     if (signal === "red") {
-        // alert("You Must Stop");
+
         document.write(`<table>
     <tr>  
         <th>Signal Color</th>

@@ -1,12 +1,13 @@
 ul a {
-    text-decoration: none;   
+    text-decoration: none;
     color: black;
 }
 
-a:visited , a::after , a::before {
+a:visited,
+a::after,
+a::before {
     text-decoration: none;
 }
-
 
 ul a:hover {
     color: blue;

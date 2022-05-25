@@ -1,4 +1,14 @@
 //Task 1
+function task1() {
+    var input = prompt("Please Enter a string or a number to check whether it's a number , uppercase or lowercase");
+    if (input >= 65 && input <= 90) {
+        alert("The Given input is uppercase");
+    } else if (input >= 97 && input <= 122) {
+        alert("The Given input is lowercase");
+    } else {
+        alert("Please type any number / string");
+    }
+}
 
 
 //Task 2
@@ -46,10 +56,14 @@ function task4() {
 
     if (character === "a" || "e" || "i" || "o" || "u") {
         alert("True")
-    } else {
+    } else if (character !== "a" || "e" || "i" || "o" || "u") {
         alert("False");
+    } else {
+        alert("False")
     }
+
 }
+
 
 
 
@@ -84,3 +98,18 @@ function task6() {
 }
 
 //Task 7
+function task7() {
+    var time = +prompt("Please Enter a time in 24 hours format like 1900 = 7pm");
+
+    if (time >= 0000 && time < 1200) {
+        alert("Good Morning !")
+    } else if (time >= 1200 && time < 1700) {
+        alert("Good Afternoon !")
+    } else if (time >= 1700 && time < 2100) {
+        alert("Good Evening !")
+    } else if (time >= 2100 && time <= 2359) {
+        alert("Good Night")
+    } else {
+        alert("Please Enter a time in 24 hours format like 1900 = 7pm")
+    }
+}
