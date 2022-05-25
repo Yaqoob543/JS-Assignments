@@ -204,6 +204,8 @@ function task10() {
         alert("Today's Weather is cool");
     } else if (temp > 10) {
         alert("OMG! Today's weather is so cool");
+    } else {
+        alert("The Weather is so much cooler")
     }
 }
 
