@@ -31,10 +31,69 @@ function task8() {
 }
 
 //Task 9
+function task9() {
+    var colors = ["Red", "Green", "Blue"];
+    document.write(colors);
+}
+
+//Task 9a
+function task9a() {
+    var userColor = prompt("Which color do you want to add at the beginning");
+    colors = ["Red", "Green", "Blue"];
+    colors.unshift(userColor);
+    document.write(colors);
+}
+
+//Task 9b
+function task9b() {
+    userColor = prompt("Which color do you want to a at the end")
+    colors = ["Red", "Green", "Blue"];
+    colors.push(userColor);
+    document.write(colors)
+}
 
 
+//Task 9c
+function task9c() {
+    userColor1 = prompt("Enter Color Name to add at the begining");
+    userColor2 = prompt("Enter Second Color Name to add at the begining");
+    colors = ["Red", "Green", "Blue"];
+    colors.unshift(userColor1, userColor2);
+    document.write(colors);
+}
 
+//Task 9d 
+function task9d() {
+    colors = ["Red", "Green", "Blue"];
+    colors.shift();
+    document.write(colors);
+}
 
+//Task 9e
+function task9e() {
+    colors = ["Red", "Green", "Blue"];
+    colors.pop();
+    document.write(colors);
+}
+
+//Task 9f
+function task9f() {
+
+    colors = ["Red", "Green", "Blue"];
+    var input = prompt("Please Ente the color Name you wanna add")
+    var input2 = +prompt("Please Enter desired index / position, start from 0 ")
+    colors.splice(input2, 0, input);
+    document.write(colors);
+}
+
+//Task 9g
+function task9g() {
+    colors = ["Red", "Green", "Blue"];
+    var deleteColor = prompt("which color do you want to delete on that index? (red , green , blue) ")
+    var deletenumber = +prompt("At which index do you want to delete color (0, 1 , 2) ?");
+    colors.splice(deletenumber);
+    document.write(colors);
+}
 
 
 //Task 10
@@ -56,12 +115,96 @@ function task11() {
 //Task 12 
 function task12() {
     var arr = ["This", "is", "my", "cat"];
-    document.write("<p>", "Array : " + arr, "</p>");
-    arr.join();
-    document.write("<p>", "String : " + arr, "</p>");
+    document.write("<h1>Array: </h1>");
+    document.write(`<h1>${arr}</h1><br>`);
+
+    var joined = arr.join(" ");
+
+    document.write("<h1>String: </h1>");
+    document.write(`<h1>${joined}</h1><br>`);
+}
 
 
+//Task 13
+function task13() {
+
+    var hardWare = ["Keyboard", "mouse", "printer", "monitor"];
+    document.write("<h2>Devices: </h2>");
+    document.write(`<h2>${hardWare}</h2><br>`);
+
+    var value = hardWare.shift();
+    document.write(`<h2> ${"Out :"} </h2>`);
+    document.write(`<h2> ${value} </h2>`);
+
+    value = hardWare.shift();
+    document.write(`<h2> ${"Out :"} </h2>`);
+    document.write(`<h2> ${value} </h2>`);
+
+    value = hardWare.shift();
+    document.write(`<h2> ${"Out :"} </h2>`);
+    document.write(`<h2> ${value} </h2>`);
+
+    value = hardWare.shift();
+    document.write(`<h2> ${"Out :"} </h2>`);
+    document.write(`<h2> ${value} </h2>`);
+}
+
+//Task 14 
+function task14() {
+    var hardWare2 = ["Keyboard", "mouse", "printer", "monitor"];
+    document.write("<h2>Devices: </h2>");
+    document.write(`<h2>${hardWare2}</h2><br>`);
+
+    var value2 = hardWare2.pop();
+    document.write(`<h2> ${"Out :"}</h2>`);
+    document.write(`<h2> ${value2}</h2>`);
+
+    value2 = hardWare2.pop();
+    document.write(`<h2> ${"Out :"}</h2>`);
+    document.write(`<h2> ${value2}</h2>`);
+
+    value2 = hardWare2.pop();
+    document.write(`<h2> ${"Out :"}</h2>`);
+    document.write(`<h2> ${value2} </h2>`);
+
+    value2 = hardWare2.pop();
+    document.write(`<h2> ${"Out :"}</h2>`);
+    document.write(`<h2> ${value2}</h2>`);
+}
 
 
+//Task 15 
+function task15() {
+
+    var companies = ['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+
+    document.write(`
+        <div class = dropdown>
+        <select>
+        <option>(${companies[0]})</option>
+        <option>(${companies[1]})</option>
+        <option>(${companies[2]})</option>
+        <option>(${companies[3]})</option>
+        <option>(${companies[4]})</option>
+        <option>(${companies[5]})</option>
+    </select>        
+        <style>
+         
+            
+            .dropdown{
+                width:60%;
+                margin:20px auto;
+                text-align:center;
+            }
+            select {
+                border: none;
+                width: 30%;
+                padding: 10px;
+                font-size: 18px;
+                box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+                
+            }
+        </style>
+    `)
 
 }
