@@ -110,10 +110,6 @@ function task8() {
     document.write("The Largest Number in Array is " + "<b>" + largestNum + "<b>");
 }
 
-
-var arrItems = [24, 53, 78, 91, 12];
-var largeNum = 0
-
 //Task 9 
 function task9() {
     var arrItems = [24, 53, 78, 91, 12];
