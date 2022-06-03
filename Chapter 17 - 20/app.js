@@ -84,14 +84,15 @@ function task6() {
 function task7() {
     var arr = ["cake", "apple pie", "cookie", "chips", "patties"];
     var userInput = prompt("Welcome to ABC Bakery , What do you want to orde sir/ma'am");
+    var match =  true
     for (var i = 0; i <= 5; i++) {
         if (userInput === arr[i]) {
+            match = false
             alert(userInput + " is available at index " + i + " in our bakery");
             break;
-        } else {
-            alert("Not Available");
-            break;
         }
+    }if (match = true) {
+        alert("We are sorry " + userInput + " is not available at our bakery" );
     }
 }
 
@@ -108,6 +109,10 @@ function task8() {
     }
     document.write("The Largest Number in Array is " + "<b>" + largestNum + "<b>");
 }
+
+
+var arrItems = [24, 53, 78, 91, 12];
+var largeNum = 0
 
 //Task 9 
 function task9() {
