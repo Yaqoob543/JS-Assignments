@@ -94,6 +94,7 @@ function task7() {
     }if (match = true) {
         alert("We are sorry " + userInput + " is not available at our bakery" );
     }
+    
 }
 
 //Task 8
