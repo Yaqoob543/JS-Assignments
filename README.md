@@ -1,3 +1,3 @@
 # JS-Assignments
 
-https://js-assignments-836fc.surge.sh/
+https://js-assignments-836fc.netlify.app/
