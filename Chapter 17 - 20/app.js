@@ -84,19 +84,18 @@ function task6() {
 function task7() {
     var arr = ["cake", "apple pie", "cookie", "chips", "patties"];
     var userInput = prompt("Welcome to ABC Bakery , What do you want to orde sir/ma'am");
-    var match =  true
-    for (var i = 0; i <= 5; i++) {
+    var match = true;
+    for (var i = 0; i < arr.length; i++) {
         if (userInput === arr[i]) {
-            match = false
+            match = false;
             alert(userInput + " is available at index " + i + " in our bakery");
             break;
         }
-    }if (match = true) {
-        alert("We are sorry " + userInput + " is not available at our bakery" );
     }
-    
+    if (match === true) {
+        alert("We are sorry " + userInput + " is not available at our bakery");
+    }
 }
-
 //Task 8
 function task8() {
 
