@@ -85,6 +85,51 @@ function task11() {
 function task12() {
     var num = +prompt("Enter a Number in Decimal Value");
     var num2 = String(num)
-
     console.log(num2)
+}
+
+//Task 13
+
+
+//Task 14
+function task14() {
+    var arr = ["cake", "apple pie", "cookie", "chips", "patties"];
+    var userInput = prompt("Welcome to ABC Bakery , What do you want to orde sir/ma'am").toLowerCase();
+    var match = true;
+    for (var i = 0; i < arr.length; i++) {
+        if (userInput === arr[i]) {
+            match = false;
+            swal(userInput + " is available at index " + i + " in our bakery");
+            break;
+        }
+    }
+    if (match === true) {
+        swal("We are sorry " + userInput + " is not available at our bakery");
+    }
+}
+
+//Task 15
+
+//Task 16
+function task16() {
+    var university = "University of Karachi";
+    var final = university.split("").join("<br>")
+    document.write(final)
+}
+
+//Task 17
+function task17() {
+    var userInput = prompt("Please Enter Any Input");
+    var result = userInput.charAt(userInput.length - 1);
+    document.write("User input : " + userInput + "<br>")
+    document.write("Last Character of input : " + result + "<br>");
+}
+
+//Task 18
+function task18() {
+    var text = "the quick brown fox jumps over the lazy dog";
+    var occur = (text.match(/the/g) || []).length
+    console.log(occur)
+    document.write("Text : the quick brown fox jumps over the lazy dog" + "<br>")
+    document.write("There are " + occur + " occurence (s) of word 'the' .")
 }

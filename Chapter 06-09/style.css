@@ -6,31 +6,32 @@ h2 {
     text-align: center;
 }
 
-  button {
-      display: inline-block;
-      cursor: pointer;
-  }
-  
-  .content  {
-      border: 2px solid rgb(0, 0, 0);
-      padding-top: 10px;
-      padding-bottom: 10px;
-  }
-  
-  .content {
-      text-align: center;
-  }
-  
-  ul li {
-      list-style-type: none !important;
-      text-align: center;
-  }
+button {
+    display: inline-block;
+    cursor: pointer;
+}
 
-  ol li {
-      list-style-type: none;
-  }
+.content {
+    border: 2px solid rgb(0, 0, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
-  a {
+.content {
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none !important;
+    text-align: center;
+    font-style: italic;
+}
+
+ol li {
+    list-style-type: none;
+}
+
+a {
     text-decoration: none;
     color: black;
-  }
+}
