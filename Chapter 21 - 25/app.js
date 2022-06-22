@@ -85,10 +85,18 @@ function task11() {
 function task12() {
     var num = +prompt("Enter a Number in Decimal Value");
     var num2 = String(num)
-    console.log(num2)
+    swal(num2)
 }
 
 //Task 13
+function task13() {
+    var user = prompt("Please Enter Your Username");
+    if (user != "!" && user != "," && user != "." && user != "@") {
+        swal("Your Username is Valid ");
+    } else {
+        swal("Your username is Invalid")
+    }
+}
 
 
 //Task 14
