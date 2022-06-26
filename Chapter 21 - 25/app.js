@@ -118,6 +118,8 @@ function task14() {
 
 //Task 15
 
+
+
 //Task 16
 function task16() {
     var university = "University of Karachi";
