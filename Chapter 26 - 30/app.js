@@ -55,7 +55,27 @@ function task6() {
     document.write("random number between 1 and 100 is : " + a)
 }
 
-//Task 7
+//Task 7    
+
+function task7() {
+    var a = prompt("Please Enter your height").toLowerCase();
+
+    if (a.includes("kgs")) {
+        document.write(" The weight of user is  " + a.split("kgs").join("") + " " + "kilograms")
+    } else if (a.includes("kilograms")) {
+        document.write(" The weight of user is  " + a.split("kilograms").join("") + " " + "kilograms")
+    } else if (a.includes("kilogram")) {
+        document.write(" The weight of user is  " + a.split("kilogram").join("") + " " + "kilograms")
+    } else if (a.includes("kg")) {
+        document.write(" The weight of user is  " + a.split("kg").join("") + " " + "kilograms")
+    } else if (a === " " || a === "") {
+        alert("Please Enter your height")
+    } else {
+        document.write(" The weight of user is  " + a + " kilograms")
+    }
+}
+
+
 
 
 //Task 8 
