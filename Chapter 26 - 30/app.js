@@ -58,23 +58,14 @@ function task6() {
 //Task 7    
 
 function task7() {
-    var a = prompt("Please Enter your height").toLowerCase();
-
-    if (a.includes("kgs")) {
-        document.write(" The weight of user is  " + a.split("kgs").join("") + " " + "kilograms")
-    } else if (a.includes("kilograms")) {
-        document.write(" The weight of user is  " + a.split("kilograms").join("") + " " + "kilograms")
-    } else if (a.includes("kilogram")) {
-        document.write(" The weight of user is  " + a.split("kilogram").join("") + " " + "kilograms")
-    } else if (a.includes("kg")) {
-        document.write(" The weight of user is  " + a.split("kg").join("") + " " + "kilograms")
-    } else if (a === " " || a === "") {
-        alert("Please Enter your height")
+    var a = prompt("Please Enter your weight")
+    if (a.indexOf(".")) {
+        document.write("The weight of user is " + parseFloat(a) + " Kilograms")
     } else {
-        document.write(" The weight of user is  " + a + " kilograms")
+        document.write("The weight of user is " + parseInt(a) + " Kilograms")
+
     }
 }
-
 
 
 
