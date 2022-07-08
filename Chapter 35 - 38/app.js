@@ -68,7 +68,7 @@ function task6() {
 function task7() {
     function count(num1, num2) {
         for (var i = num1; i <= num2; i++) {
-            document.write(i)
+            document.write(i + "<br>")
         }
     }
     count(+prompt("Enter number to start counting"), +prompt("Enter number to end counting"))
