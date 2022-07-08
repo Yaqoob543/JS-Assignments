@@ -56,7 +56,7 @@ function task6() {
         } else {
             for (var i = 1; i <= n; i++) {
                 answer = answer * i
-                alert("The Factorial of " + n + " is " + answer)
+                document.write("The Factorial of " + n + " is " + answer)
             }
         }
     }
