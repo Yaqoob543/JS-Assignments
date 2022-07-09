@@ -36,7 +36,7 @@ function task4() {
             alert("Please Enter a Valid Operator")
         }
     }
-    cal(+prompt("Please enter first number"), prompt("Please Input your desired operator"), +prompt("Please enter second number"))
+    cal(parseInt(prompt("Please enter first number")), prompt("Please Input your desired operator"), parseInt(prompt("Please enter second number")))
 }
 
 //Task 5
@@ -108,13 +108,27 @@ function task11() {
         for (var i = 0; i < splitStr.length; i++) {
             splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
         }
+
         return splitStr.join(' ');
     }
+    alert(splitStr)
     titleCase(prompt("Enter Any Sentence to Convert it to Title Case"))
 }
 
 //task 12
-// will solve it later
+function task12() {
+    var str = prompt("Please Enter Any Sentence")
+    var splitArrayValue = str.split(' ');
+
+    var storeWord = "";
+
+    for (var i = 0; i < splitArrayValue.length; i++) {
+        if (splitArrayValue[i].length > storeWord.length) {
+            storeWord = splitArrayValue[i];
+        }
+    }
+    alert("The longest word in your sentence is " + storeWord)
+}
 
 
 //Task 13
